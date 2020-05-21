@@ -104,13 +104,13 @@ select restaurant_name
 -- not working..
 select restaurant_name
   from restaurant
-    where (visit_date - 7) > 0;
+    where visit_date <= '2020-05-14';
 
 -- restaurant you haven't eaten at in the last week and has 4.5 or above stars
 -- not working..
 select restaurant_name
   from restaurant
-    where (visit_date - 7) > 0 AND  stars >= 4.5;
+    where visit_date <= '2020-05-14' AND  stars >= 4.5;
 
 -- list restaurants by the closest distance
 select restaurant_name
